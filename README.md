@@ -16,7 +16,7 @@ Course Detail Page (Mock): Includes a layout for individual course pages, struct
 ## Technologies Used
 
 HTML: Provides structure for all pages and organizes content into sections.
-## CSS: Styles the layout, colors, fonts, and other visual elements, closely matching Udemy's look and feel.
+CSS: Styles the layout, colors, fonts, and other visual elements, closely matching Udemy's look and feel.
 
 ## Future Improvements
 
