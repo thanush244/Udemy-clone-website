@@ -15,6 +15,10 @@ body{
     border-bottom: solid black 1px;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 .navbar__s1__title{
      color: #A435F0;
@@ -32,6 +36,7 @@ body{
 .navbar__s2 input{
     border: none;
     width: 100%;
+    background: none;
 }
 .navbar__s2 :focus{
     outline: none;
@@ -40,6 +45,25 @@ body{
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border:  solid black 1px;
+    width: 100px;
+    top: 150%;
+    padding: 20px;
+    right: 0;
+    display: none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
 }
 .category{
     display: flex;
@@ -53,9 +77,44 @@ body{
     color: white;
     border-radius: 30px;
     padding: 10px;
+    cursor: pointer;
+    border: solid violet 1px;
+}
+.category p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: solid violet 1px;
 }
 .sale_image img{
     width: 100%;
+}
+.sale_image{
+    position: relative;
+}
+.sale_image__offer{
+    position: absolute;
+    border: solid black 2px;
+    padding: 2%;
+    top: 10%;
+    left: 15%;
+    background-color: white;
+    width: 26%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .recommended{
@@ -69,7 +128,9 @@ body{
 
 }
 .course__card{
-    width: 400px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .course__card img{
@@ -113,4 +174,26 @@ body{
     display:flex;
     justify-content: space-between;
     margin: 20px;
+}
+
+
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .course__card{
+        flex-basis: 40%;
+    }
+    .category{
+        display: none;
+    }
+    .navbar__s3
+    {
+        display: none;
+    }
+  
+    
 }
