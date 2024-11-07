@@ -194,6 +194,10 @@ body{
     {
         display: none;
     }
+     .sale_image__offer{
+        width: 50%;
+    }
+    
   
     
 }
