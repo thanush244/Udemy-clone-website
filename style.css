@@ -9,7 +9,7 @@ body{
 }
 
 .navbar{
-    padding: 10px;
+    padding: 70%px;
     display: flex;
     justify-content: space-between;
     border-bottom: solid black 1px;
