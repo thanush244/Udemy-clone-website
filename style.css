@@ -9,7 +9,7 @@ body{
 }
 
 .navbar{
-    padding: 10px;
+    padding: 70%px;
     display: flex;
     justify-content: space-between;
     border-bottom: solid black 1px;
@@ -17,7 +17,7 @@ body{
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: blue;
     z-index: 1;
 }
 .navbar__s1__title{
